@@ -1,0 +1,46 @@
+{
+  "name": "freelansters",
+  "version": "1.0.0",
+  "description": "Backend for Freelansters",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhanu1776/Freelansters"
+  },
+  "keywords": [
+    "Express",
+    "Mongodb",
+    "NodeJS"
+  ],
+  "author": "Bhanu1776",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bhanu1776/Freelansters/issues"
+  },
+  "homepage": "https://github.com/Bhanu1776/Freelansters/#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.0",
+    "node-latest": "^4.0.1",
+    "nodemon": "^2.0.22",
+    "npm": "^9.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0",
+    "react-scripts": "^5.0.1",
+    "update": "^0.7.4",
+    "web-vitals": "^3.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

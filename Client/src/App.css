@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+
+/** Css Variables */
+:root {
+  --shady-white-color: #f5f5f5;
+  /* #fafffe*/
+  --accent-color: #1cd6ce;
+  /*#00c8aa*/
+  --section-font: "Acme", sans-serif;
+  --primary-font: "PT Serif", serif;
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: hsl(142, 90%, 61%);
+  --padding: 1.5rem;
+  --cate-text: #31f7f0;
+}
+
+/* swiper */
+#app {
+  height: 100%;
+}
+
+/** Carousel Text */
+.title1 {
+  margin-right: 55%;
+}
+
+.swiper-h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: #006b65;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px #09c3ba;
+}
+
+.swiper-h2 {
+  animation: text1;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 8s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+  font-family: "Merriweather", serif;
+  color: #095f59;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #5deee7;
+}
+
+.swiper-h2::after {
+  content: "|";
+  position: absolute;
+  right: 50;
+  color: red;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  10%,
+  40% {
+    width: 17em;
+  }
+}
+
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.swiper-h3 {
+  font-family: "Secular One", sans-serif;
+  font-size: 3.7rem;
+  color: #a9612b;
+  text-shadow: 2px 2px 6px #df9359;
+}
+
+.title4 {
+  margin-right: -55%;
+  margin-top: 7%;
+}
+
+.swiper-h4 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 3.2rem;
+  color: #e19b64;
+  text-shadow: 1px 1px 4px #d07631;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #ff9100;
+  }
+  to {
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #ff6f00;
+  }
+}
+/** ---------------------------------------------------------  */
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  color: #19bdb5;
+  margin-left: 50px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  margin-right: 50px;
+  color: #12bfb6;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+  width: 12px;
+  height: 12px;
+}
+
+.Carcontainer {
+  position: relative;
+  width: 97.9vw;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-left: 0.5%;
+  margin-bottom: 5%;
+  color: rgba(255, 255, 255, 0.398);
+}
+
+.swiper {
+  top: 3.4rem;
+  padding: 0;
+  width: 95%;
+  margin-left: 30%;
+  border-radius: 23px;
+  height: 97%;
+}
+
+.swiper-slide {
+  position: absolute;
+  z-index: -1;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  margin-right: 70%;
+  font-size: 41px;
+  font-weight: bolder;
+}
+
+/** ------------------------------------------------------------------------------ */
+
+/** Scroll Down Animation  */
+.box-div {
+  margin-top: -2%;
+  margin-left: 49%;
+}
+
+.box span {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-right: 2px solid rgb(34, 34, 34);
+  border-bottom: 2px solid rgb(34, 34, 34);
+  transform: rotate(45deg);
+  margin: -22px;
+  margin-left: 49%;
+  margin-top: 10;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/** ------------------------------------------------------------------------------ */
+
+/** Glass section  */
+#Website-des {
+  position: relative;
+  height: 584px;
+}
+
+.glass {
+  position: absolute;
+  border-radius: 23px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4.8px 0px;
+  background: rgba(28, 214, 206, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(28, 214, 206, 0.1);
+  top: 50px;
+  width: 94%;
+  height: 510px;
+  margin: 17px 45px;
+}
+
+#feat-h1 {
+  color: #1cd6ce;
+  font-family: "PT Serif", serif;
+  font-size: 2.2rem;
+  position: absolute;
+  top: 107px;
+  left: 50px;
+  font-weight: bold;
+}
+
+.divider-h {
+  position: absolute;
+  background: #14cac2;
+  border-radius: 50px;
+  height: 4px;
+  width: 274px;
+  top: 160px;
+  left: 50px;
+}
+
+#feat-p {
+  position: absolute;
+  font-family: "PT Serif", serif;
+  font-size: 1.3rem;
+  opacity: 0.5;
+  margin-right: 736px;
+  top: 200px;
+  left: 50px;
+  line-height: normal;
+  text-align: justify;
+}
+
+.g-button-div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  top: 143px;
+  left: 50px;
+}
+
+.g-button {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  );
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  min-width: 148px;
+  min-height: 43px;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+.g-button::before {
+  position: absolute;
+  content: "";
+  opacity: 0;
+  border-radius: 1000px;
+  border: 6px solid #00ffe5;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+  min-width: calc(148px + 12px);
+  min-height: calc(43px + 12px);
+  top: 50%;
+  left: 50%;
+}
+
+.g-button:hover,
+.g-button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+  box-sizing: none;
+}
+
+.g-button:hover::before,
+.g-button:focus::before {
+  opacity: 1 !important;
+}
+
+#g-img {
+  position: absolute;
+  height: 109%;
+  left: 55%;
+}
+
+.Features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--section-font);
+  font-size: 2.2rem;
+  letter-spacing: 1.4px;
+  height: 90px;
+  margin-top: 40px;
+}
+
+#divider {
+  position: absolute;
+  background: #1cd6ce;
+  border-radius: 50px;
+  height: 4px;
+  width: 238px;
+  margin-left: 627px;
+  margin-top: -13px;
+}
+
+/** ------------------------------------------------------------------------------ */
+
+/** Categories */
+/* Cards for Landing page */
+
+#divider2 {
+  position: absolute;
+  background: #1cd6ce;
+  border-radius: 50px;
+  height: 4px;
+  width: 205px;
+  margin-left: 656px;
+  margin-top: -19px;
+}
+
+/** ------------------------------------------------------------------------------ */
+
+/** Top Features */
+
+#Features-arc {
+  position: relative;
+  background-color: #f1eff8;
+  z-index: 1;
+  padding-top: 2px;
+  height: 710px;
+  overflow-x: auto;
+}
+
+#Features-div h3 {
+  font-family: "PT Serif", serif;
+  opacity: 0.9;
+  margin: 20px 0px 15px 700px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+#Features-div p {
+  opacity: 0.7;
+  font-family: "PT Serif", serif;
+  margin-right: 30px;
+  margin-left: 700px;
+}
+
+.f-img {
+  position: absolute;
+  left: 0px;
+  top: -29px;
+}
+
+.circle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 664px;
+  top: 0px;
+}
+
+.circle svg {
+  margin-bottom: 82px;
+  width: 22px;
+}
+
+.circle svg:hover {
+  color: #32b2ac;
+}
+
+.shape-img1 {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+  animation: moveLeftBounce 3s linear infinite;
+  left: 2%;
+  top: 102%;
+}
+
+@keyframes moveLeftBounce {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.shape-img2 {
+  position: absolute;
+  -webkit-transform: translateY(-20%) translateX(-15%);
+  transform: translateY(-20%) translateX(-15%);
+  z-index: -1;
+  -webkit-animation: animationFramesOne 20s infinite linear;
+  animation: animationFramesOne 20s infinite linear;
+  left: 40%;
+  top: 17%;
+}
+
+.shape-img3 {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: rotate3d 4s linear infinite;
+  animation: rotate3d 4s linear infinite;
+  left: 26%;
+  bottom: 107%;
+}
+
+.shape-img4 {
+  position: absolute;
+  z-index: -1;
+  bottom: 72%;
+  left: -3%;
+}
+
+.shape-img5 {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: shape5 3s linear infinite;
+  animation: shape5 3s linear infinite;
+  left: 28%;
+  bottom: -16%;
+}
+
+.shape-img6 {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  z-index: -1;
+  -webkit-animation: rotate3d 4s linear infinite;
+  animation: rotate3d 4s linear infinite;
+  left: 0;
+  right: 0;
+  top: 111%;
+}
+
+.shape-img7 {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: moveBounce 5s linear infinite;
+  animation: moveBounce 5s linear infinite;
+  left: 40%;
+  bottom: 28%;
+}
+
+.shape-img8 {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  z-index: -1;
+  -webkit-animation: moveLeftBounce 3s linear infinite;
+  animation: moveLeftBounce 3s linear infinite;
+  bottom: 12%;
+  right: 25%;
+}
+
+.shape-img9 {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: moveScale 3s linear infinite;
+  animation: moveScale 3s linear infinite;
+  right: 10%;
+  bottom: 113%;
+}
+
+.shape-img10 {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: moveLeftBounce 3s linear infinite;
+  animation: moveLeftBounce 3s linear infinite;
+  left: 32%;
+  bottom: 134%;
+}
+
+.shape-img11 {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: shape11 7s linear infinite;
+  animation: shape11 7s linear infinite;
+  right: 5%;
+  bottom: 5%;
+}
+
+.shape-img12 {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  z-index: -1;
+  -webkit-animation: moveLeftBounce 3s linear infinite;
+  animation: moveLeftBounce 3s linear infinite;
+  bottom: 94%;
+  right: 41%;
+}
+
+/** ------------------------------------------------------------------------------ */
