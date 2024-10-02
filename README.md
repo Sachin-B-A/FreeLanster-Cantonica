@@ -32,7 +32,7 @@ A platform for small, independent filmmakers to earn income through product plac
 ## Installation 💾
 
 ```bash
-git clone https://github.com/Bhanu1776/Freelansters.git
+git clone https://github.com/sachinba/Freelansters.git
 ```
 
 Create config.env file in `backend` folder and Fill your `.env` variables:
