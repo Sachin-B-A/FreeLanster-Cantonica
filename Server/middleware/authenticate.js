@@ -1,4 +1,4 @@
-
+// User Authentication
 const User = require('../model/userSchema');
 const jwt = require('jsonwebtoken')
 
