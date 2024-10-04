@@ -39,7 +39,7 @@ const FindFreelancer = () => {
             const data = await res.json();
             console.log(data);
 
-            // Check for status but don't redirect if unauthenticated
+            // Check for status but don't redirect if unauthenticated!
             if (!res.status === 200) {
                 console.log('Error fetching freelancers, but not redirecting');
             }
