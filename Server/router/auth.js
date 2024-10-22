@@ -8,7 +8,7 @@ const User = require('../model/userSchema');
 
 
 // router.get('/', (req, res) => {
-//     res.send('Hello world from the router js');
+//res.send('Hello world from the router js');
 // })
 
 // SingUp Route
