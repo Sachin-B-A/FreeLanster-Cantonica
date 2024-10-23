@@ -8,7 +8,7 @@ const Authenticate = async (req, res, next) => {
     //     const token = req?.cookies.jwtoken1 || req.header("Authorization")?.replace("Bearer ","");;
     //     const verifyToken = jwt.verify(token, process.env.SECRET_KEY || "jdifajifjawiejiejtij");
 
-    //     if (!token) {
+    //     if (!token)  {
     //         console.log("not found TOken!");
     //     }
 
