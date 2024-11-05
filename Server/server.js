@@ -9,7 +9,7 @@ dotenv.config({ path: './env' });
 const PORT = process.env.PORT || 5000;
 require('./db/conn.js')
 
-const FJSchema = require('./model/FJSchema');
+const FJSchema = require('./model/FJSchema') ;
 const FFSchema = require('./model/FFSchema');
 const tempSchema = require('./model/tempSchema');
 
