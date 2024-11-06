@@ -17,7 +17,7 @@ import { UserContext } from "./Routing";
 
 const App = () => {
 
-    // eslint-disable-next-line no-unused-vars
+    // eslint-disable-next-line no-unused-var's
     const { state, dispatch } = useContext(UserContext);
 
     const [loading, setLoading] = useState(true);
