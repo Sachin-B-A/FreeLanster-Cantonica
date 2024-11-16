@@ -12,7 +12,7 @@ import axios from "axios"
 const FindFreelancer = () => {
 
     const navigate = useNavigate();
-    // eslint-disable-next-line no-unused-vars
+    // eslint-disable-next-line no-unused-var
     const { state, dispatch } = useContext(UserContext);
 
     const [loading, setLoading] = useState(true);
