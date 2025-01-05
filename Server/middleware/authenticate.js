@@ -9,7 +9,7 @@ const Authenticate = async (req, res, next) => {
     //     const verifyToken = jwt.verify(token, process.env.SECRET_KEY || "jdifajifjawiejiejtij");
 
     //     if (!token)  {
-    //         console.log("not found TOken!");
+    //         console.log("not found TOken!") ;
     //     }
 
     //     const rootUser = await User.findOne({ _id: verifyToken._id, "tokens.token": token })
