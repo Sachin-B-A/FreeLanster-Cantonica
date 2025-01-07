@@ -6,7 +6,7 @@ A platform for small, independent filmmakers to earn income through product plac
 
 ## Technologies 🔧
 
-- HTML, CSS, Javascript
+- HTML, CSS,Javascript
 - React
 - NodeJs
 - Express
